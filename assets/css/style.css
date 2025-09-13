@@ -17,7 +17,7 @@ body {
 
 header {
   grid-area: header;
-  background-color: darkblue;
+  background-color: rgb(33, 81, 183);
   display: flex;
   color: white;
   align-items: center;
@@ -113,4 +113,40 @@ footer {
   align-items: center;
   justify-content: center;
   min-height: 70px;
+}
+
+/* COMPUTADOR */
+
+@media (min-width: 576px) {
+  body {
+    grid-template-areas:
+      "header main"
+      "footer main";
+
+    grid-template-rows: 85% 15%;
+    grid-template-columns: 15% 85%;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px 0px;
+  }
+  menu {
+    display: block;
+    margin-top: 30px;
+  }
+
+  menu ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .hamburguesa {
+    display: none;
+  }
 }
