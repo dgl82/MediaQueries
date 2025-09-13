@@ -11,12 +11,17 @@ body {
     "main"
     "footer";
 
-  grid-template-rows: 1fr 12fr 1fr;
+  grid-template-rows: 1fr 10fr 1fr;
 }
 
 header {
   grid-area: header;
-  background-color: lightblue;
+  background-color: darkblue;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
 }
 
 main {
