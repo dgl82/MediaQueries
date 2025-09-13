@@ -124,7 +124,7 @@ footer {
       "footer main";
 
     grid-template-rows: 90% 10%;
-    grid-template-columns: 15% 85%;
+    grid-template-columns: 10% 90%;
   }
 
   header {
@@ -148,6 +148,28 @@ footer {
 
   .hamburguesa {
     display: none;
+  }
+
+  .productos {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 85vw;
+    min-height: calc(100vh - 150px);
+    padding: 0px;
+    gap: 0px;
+    overflow: hidden;
+  }
+
+  .tarjeta {
+    max-width: 15%;
+    margin: 5px 0px;
+    max-height: 10%;
+    margin-top: 20px;
+  }
+
+  .tarjeta img {
+    max-width: 100%;
+    max-height: 75%;
   }
 
   footer {
