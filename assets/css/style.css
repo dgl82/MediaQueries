@@ -118,7 +118,14 @@ footer {
 /* COMPUTADOR */
 
 @media (min-width: 576px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
   body {
+    height: auto;
+    width: auto;
     grid-template-areas:
       "header main"
       "footer main";
@@ -152,19 +159,19 @@ footer {
 
   .productos {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    max-width: 85vw;
+    justify-content: space-around;
+    max-width: auto;
     min-height: calc(100vh - 150px);
     padding: 0px;
     gap: 0px;
-    overflow: hidden;
+    overflow-y: scroll;
   }
 
   .tarjeta {
-    max-width: 15%;
-    margin: 5px 0px;
-    max-height: 10%;
     margin-top: 20px;
+    width: 24%;
   }
 
   .tarjeta img {
